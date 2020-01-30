@@ -84,6 +84,9 @@ const Catalog = () => {
                 <h3>Kennedy</h3>
                 <span className={catalogStyles.price}>$100</span>
               </div>
+              <div className={catalogStyles.tag}>
+                <span>Special Order Only</span>
+              </div>
               <p>Kennedy is so pretty &amp; fresh in her red trimmed wrap!</p>
               <button className={buttonStyles.button}>Purchase</button>
             </div>

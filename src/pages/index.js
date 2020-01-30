@@ -11,7 +11,7 @@ const IndexPage = () => {
         <div className={homeStyles.main}>
           <div className={homeStyles.container}>
             <h1>
-              Beautiful, <br /> Handmade <br /> Cloth Dolls
+              Beautiful, <br /> Handcrafted <br /> Cloth Dolls
             </h1>
             <p>
               Dolls by Andi offers beautifully hand-crafted dolls. Each unique,
