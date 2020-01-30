@@ -1,0 +1,90 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  padding: 50px 100px;
+}
+
+.info {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: right;
+  padding: 10px 40px;
+  margin-top: 10px;
+  border-right: solid 1px grey;
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  span {
+    font-size: 0.9rem;
+  }
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding: 10px 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px grey;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 16px;
+  height: fit-content;
+
+  img {
+    height: 400px;
+    object-fit: cover;
+    margin: 0;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 1.6em;
+  }
+
+  p {
+    color: #747474;
+  }
+
+  & > div {
+    padding: 24px;
+  }
+
+  & > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  button {
+    height: 2.5rem;
+  }
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.6em;
+}
+
+.tag {
+  background-color: rgb(241, 197, 102);
+  //height: 50px;
+  font-size: 0.8rem;
+  padding: 0px 12px;
+  border-radius: 20px;
+
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  width: fit-content;
+  span {
+    display: inline;
+  }
+}

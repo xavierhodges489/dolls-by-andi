@@ -1,0 +1,26 @@
+.button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: grey;
+  color: #fffff2;
+
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  //margin-bottom: 10px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: rgb(151, 151, 151);
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

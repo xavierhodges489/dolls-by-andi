@@ -1,0 +1,99 @@
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1.4fr;
+  grid-template-rows: auto 1fr;
+  min-height: calc(100vh - 130px);
+}
+
+.container {
+  padding: 60px 0px 40px 200px;
+  max-width: 900px;
+}
+
+.about {
+  grid-column: 1;
+  grid-row: 1;
+
+  border-bottom: solid 1px grey;
+}
+
+.policies {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 0.85rem;
+}
+
+.contact {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  padding-right: 200px;
+
+  h2 {
+    margin-top: 80px;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    svg {
+      width: 30px;
+      margin-right: 20px;
+    }
+
+    span {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.contact-container {
+  padding: 60px 80px;
+  background-color: rgba(0, 0, 0, 0.085);
+  height: 100%;
+  border-left: solid 1px grey;
+  border-right: solid 1px grey;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  input,
+  textarea {
+    width: 100%;
+    //background-color: #f3f3e9;
+    background-color: transparent;
+
+    border: none;
+
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5ee;
+
+    &::placeholder {
+      color: #000000;
+    }
+
+    &:focus {
+      outline: none;
+      border: solid 1px grey;
+      background-color: #f3f3e9;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    height: 2.5rem;
+  }
+}

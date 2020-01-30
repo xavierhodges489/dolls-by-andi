@@ -1,0 +1,107 @@
+.grid {
+  display: grid;
+  grid-template-columns: minmax(700px, 1fr) 1.5fr;
+  grid-template-rows: auto 1fr;
+  min-height: calc(100vh - 130px);
+}
+
+.main {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  padding: 60px 80px 60px 300px;
+  border-bottom: solid 1px grey;
+  background-color: #ffffff;
+
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 242, 1) 20%,
+      rgba(255, 255, 255, 0) 70%
+    ),
+    url("https://picsum.photos/1800/600");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 5rem;
+    color: #4b4b48;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+}
+
+.view-dolls {
+  margin: 20px 0 20px;
+  color: #414141;
+  display: flex;
+  align-items: center;
+  a {
+    color: currentColor;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+  }
+  svg {
+    height: 16px;
+    fill: currentColor;
+    margin-left: 10px;
+  }
+}
+
+.container {
+  max-width: 550px;
+}
+
+.parties {
+  grid-column: 1;
+  grid-row: 2;
+  padding: 60px 80px 60px 300px;
+  font-size: 0.9rem;
+  border-right: solid 1px grey;
+
+  h2 {
+    font-size: inherit;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  a {
+    display: block;
+    color: inherit;
+  }
+
+  span {
+    color: #484848;
+    font-size: 0.8rem;
+  }
+}
+
+.info {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 60px 80px;
+  font-size: 0.9rem;
+  max-width: 800px;
+
+  h2 {
+    font-size: inherit;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: inherit;
+  }
+}
