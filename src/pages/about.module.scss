@@ -1,12 +1,13 @@
 .grid {
   display: grid;
-  grid-template-columns: 2fr 1.4fr;
+  grid-template-columns: auto auto;
   grid-template-rows: auto 1fr;
   min-height: calc(100vh - 130px);
 }
 
 .container {
-  padding: 60px 0px 40px 200px;
+  padding: 60px 60px 40px 0px;
+  margin-left: 16vw;
   max-width: 900px;
 }
 
@@ -26,7 +27,7 @@
 .contact {
   grid-column: 2;
   grid-row: 1 / span 2;
-  padding-right: 200px;
+  padding-right: 16vw;
 
   h2 {
     margin-top: 80px;
@@ -52,7 +53,7 @@
 }
 
 .contact-container {
-  padding: 60px 80px;
+  padding: 60px 40px;
   background-color: rgba(0, 0, 0, 0.085);
   height: 100%;
   border-left: solid 1px grey;
