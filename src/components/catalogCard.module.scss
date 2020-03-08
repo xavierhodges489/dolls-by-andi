@@ -1,5 +1,11 @@
-.card {
+.card-container {
   position: relative;
+  height: 480px;
+}
+
+.card {
+  position: absolute;
+
   height: fit-content;
   overflow: hidden;
   background-color: #fffff2;
