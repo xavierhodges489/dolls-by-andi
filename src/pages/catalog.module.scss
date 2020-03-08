@@ -1,90 +1,29 @@
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2.5fr;
-  padding: 50px 100px;
+.category {
+  margin: 50px auto;
+  padding: 0 16vw;
 }
 
 .info {
-  grid-column: 1;
-  grid-row: 1;
-  text-align: right;
-  padding: 10px 40px;
-  margin-top: 10px;
-  border-right: solid 1px grey;
+  width: 100%;
+
+  h1 {
+    margin-bottom: 1rem;
+  }
 
   p {
     font-size: 1rem;
-    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    max-width: 900px;
   }
 
-  span {
-    font-size: 0.9rem;
+  a {
+    // text-decoration: none;
+    color: inherit;
   }
 }
 
 .items {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  padding: 10px 40px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  border: solid 1px grey;
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 16px;
-  height: fit-content;
-
-  img {
-    height: 400px;
-    object-fit: cover;
-    margin: 0;
-  }
-
-  h3 {
-    font-weight: 400;
-    font-size: 1.4em;
-  }
-
-  p {
-    color: #747474;
-  }
-
-  & > div {
-    padding: 24px;
-  }
-
-  & > div > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  button {
-    height: 2.5rem;
-  }
-}
-
-.price {
-  font-weight: 700;
-  font-size: 1.4rem;
-}
-
-.tag {
-  background-color: rgb(241, 197, 102);
-  //height: 50px;
-  font-size: 0.8rem;
-  padding: 4px 12px;
-  border-radius: 20px;
-
-  font-weight: bold;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  width: fit-content;
-  span {
-    display: inline;
-  }
+  grid-template-columns: repeat(auto-fit, 270px);
+  gap: 16px;
 }
