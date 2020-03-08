@@ -7,7 +7,11 @@ const Footer = () => {
     <div className={footerStyles.footer}>
       <span>
         Copyright © 2020 • Icons courtesy of{" "}
-        <a href="https://fontawesome.com/license" target="_blank">
+        <a
+          href="https://fontawesome.com/license"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Font Awesome
         </a>
       </span>
