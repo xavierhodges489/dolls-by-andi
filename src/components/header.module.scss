@@ -9,13 +9,19 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+}
 
-  h1 {
-    @import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
-    font-family: "Pacifico", cursive;
-    margin: 0;
-    font-size: 2rem;
-  }
+.dolls-by-andi {
+  // @import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+  // font-family: "Pacifico", cursive;
+
+  margin: 0;
+  font-size: 2rem;
+}
+
+.dolls-by-andi-link {
+  text-decoration: none;
+  color: #1d1d1d;
 }
 
 .nav {
